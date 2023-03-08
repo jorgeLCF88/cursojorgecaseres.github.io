@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRICULUM VITAE</title>
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+        <link rel="icon" type="image/x-icon" href="./ico/arg.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- letra de google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+</head>
+<body> 
+    
+    <h1><center><p>TU CURRICULUM ONLINE</p> </center></h1>
+    
+    <center><section>
+        <h2>DATOS</h2>
+        <p id="CV">
+            <align=left><form method="POST" action="curriculum.php">
+                <label for="nombre/s">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre/s" required><br><br>
+
+                <label for="apellido/s">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido/s" required><br><br>
+
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required><br><br>
+
+                <label for="telefono">Telefono:</label>
+                <input type="num" id="tel" name="tel" placeholder="Telefono" required><br><br>
+
+                <label for="correo">Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Email" required><br><br>
+
+                <label for="tex"> Fecha de Nacimiento:</label>
+                <input type="date" id="fnac" name="fnac" laceholder= "Fecha de Nacimiento" required><br>
+                <br>
+                            
+                <p><label for="comentario">Experiencia laboral</label><br/>
+                  <textarea type="text" name="comentario" id="comentario"></textarea>
+                                
+                <!--  <textarea name="comentario" id="comentario" rows="15" cols="55" wrap="hard" placeholder="Escribe aqui tu experiencia" required>
+                    At W3Schools you will find free Web-building tutorials.
+                    </textarea><br>-->
+                    <br> 
+                   
+                    <p><label for="comentario">Espectativa Laboral</label><br/>
+                <textarea type="text" name="txtDescripcion" id="txtDescripcion"></textarea>
+                <br>                <br>                <br>
+                
+                <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                    <input type="file" name="imagen1" />
+
+                <br>                <br>                <br>
+                <label><input id="enviar" type="submit" value="Enviar"></label>
+                <!-- <center><textarea rows="15" cols="50" name="experiencia" id= "datos" form="usrform" placeholder="Ingresar la experiencia laboral" required> </textarea>
+                <br><br><br>   -->
+                <br>                <br>                <br>
+              </form></align> 
+              
+ 
+            </form>
+              <script>
+                ClassicEditor
+                    .create( document.querySelector( '#comentario' ) )
+                    .catch( error => {
+                    console.error( error );
+                    } );
+                </script>
+              <script>
+                ClassicEditor
+                    .create( document.querySelector( '#txtDescripcion' ) )
+                    .catch( error => {
+                    console.error( error );
+                    } );
+                </script>
+
+        </P>
+            <ul>
+                <li></li>
+                
+            </ul>
+    </section></center>
+    </b>
+
+
+    <br>
+    <BR></BR>
+    
+     
+</body>
+</html>

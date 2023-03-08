@@ -1,0 +1,24 @@
+
+/** comentario */
+
+        p{
+            color: cornflowerblue;    
+            width: 450;
+        }
+ 
+/** model box */
+        section { 
+            font-family: 'Roboto', sans-serif;
+            width: 500px;
+            border: 10px solid blue;
+            padding: 20px;
+            margin: 10px;
+
+
+          }
+
+          #tex1{
+            color: darkslategrey;
+
+          }
+
